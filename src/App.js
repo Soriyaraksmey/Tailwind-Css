@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Wrapper from "./components/Wrapper";
+//email project
+import Emailcard from "./components/MiniProject/Emailcard";
+import Errorpage from "./components/pages/Errorpage";
+import Pricinggrid from "./components/MiniProject/Pricinggrid";
+import Productmodal from "./components/MiniProject/Productmodal";
+import Imagegellery from "./components/MiniProject/Imagegellery";
+import Loginmodal from "./components/MiniProject/Loginmodal";
+//website project
+import Clipboard from "./components/website/Clipboard.jsx";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Wrapper />} />
+        <Route path="/emailcard" element={<Emailcard />} />
+        <Route path="/pricinggrid" element={<Pricinggrid />} />
+        <Route path="/productmodal" element={<Productmodal />} />
+        <Route path="/imagegallery" element={<Imagegellery />} />
+        <Route path="/loginmodal" element={<Loginmodal />} />\
+        <Route path="/CilpboardWebsite" element={<Clipboard />} />
+        <Route path="*" element={<Errorpage />} />
+      </Routes>
+    </Router>
   );
 }
 
