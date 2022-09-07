@@ -46,6 +46,12 @@ const Wrapper = () => {
         >
           ClipBoard Website
         </Link>
+        <Link
+          className="px-6 py-3 bg-gray-400 rounded-lg hover:scale-105 hover:bg-gray-500"
+          to="/LoopStudio"
+        >
+          LoopStudio
+        </Link>
       </div>
     </div>
   );
