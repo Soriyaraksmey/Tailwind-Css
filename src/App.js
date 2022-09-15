@@ -11,6 +11,7 @@ import Loginmodal from "./components/MiniProject/Loginmodal";
 //website project
 import Clipboard from "./components/website/Clipboard.jsx";
 import LoopStudio from "./components/website/LoopStudio";
+import Logindribble from "./components/redesign/logindribble";
 function App() {
   return (
     <Router>
@@ -23,6 +24,7 @@ function App() {
         <Route path="/loginmodal" element={<Loginmodal />} />\
         <Route path="/CilpboardWebsite" element={<Clipboard />} />
         <Route path="/LoopStudio" element={<LoopStudio />} />
+        <Route path="/dribble-redesign" element={<Logindribble />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </Router>
