@@ -8,11 +8,17 @@ import item5 from "../../assets/website/loopstudio/item5.jpg";
 import item6 from "../../assets/website/loopstudio/item6.jpg";
 import item7 from "../../assets/website/loopstudio/item7.jpg";
 import item8 from "../../assets/website/loopstudio/item8.jpg";
+import { useState } from "react";
 // import instargram from "../../assets/website/loopstudio/ig.svg";
 // import facebook from "../../assets/website/loopstudio/facebook.svg";
 // import messager from "../../assets/website/loopstudio/messager.svg";
 // import telegram from "../../assets/website/loopstudio/tele.svg";
 function LoopStudio() {
+  const [Open, SetOpen] = useState(false);
+
+  const handleClick = () => {
+    SetOpen(!Open);
+  };
   return (
     <>
       <section id="Hero">
@@ -41,15 +47,50 @@ function LoopStudio() {
                 <div className="mx-2 group-hover:border-b group-hover:border-blue-500"></div>
               </div>
             </div>
+            <div className="md:hidden">
+              <button
+                className={`${
+                  Open ? "open" : ""
+                } z-40 block hamburger md:hidden focus:outline-none`}
+                id="menu-btn"
+                onClick={handleClick}
+              >
+                <span className="hamburger-top"></span>
+                <span className="hamburger-middle"></span>
+                <span className="hamburger-bottom"></span>
+              </button>
+            </div>
           </nav>
+          <div
+            id="menu"
+            className={`absolute ${
+              Open ? "flex" : "hidden"
+            } top-0 bottom-0 left-0 flex-col self-end z-100 w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black`}
+          >
+            <a href="#" className="hover:text-strongCyan">
+              About
+            </a>
+            <a href="#" className="hover:text-strongCyan">
+              Events
+            </a>
+            <a href="#" className="hover:text-strongCyan">
+              Supports
+            </a>
+            <a href="#" className="hover:text-strongCyan">
+              Carres
+            </a>
+            <a href="#" className="hover:text-strongCyan">
+              Contact Me
+            </a>
+          </div>
           <div className="flex items-start flex-col max-w-lg mt-32 mb-32 p-4 md:p-10 md:m-32 md:mx-0">
             <div className="font-sans text-4xl text-white uppercase boder-2  md:text-6xl">
               Impressive <span className="text-cyan-500">Experiences</span> That
               Deliver
             </div>
-            <button className="bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-30 text-white px-10 py-3 rounded-2xl border border-cyan-500">
+            {/* <button className="bg-clip-padding z-20 backdrop-filter backdrop-blur-md bg-opacity-30 text-white px-10 py-3 rounded-2xl border border-cyan-500">
               Book Now
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
