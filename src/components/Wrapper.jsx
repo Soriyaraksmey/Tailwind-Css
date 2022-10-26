@@ -61,6 +61,21 @@ const Wrapper = () => {
         >
           Login
         </Link>
+        <Link
+          className="px-6 py-3 bg-gray-400 rounded-lg hover:scale-105 hover:bg-gray-500"
+          to="/sidebar"
+        >
+          Sidebar
+        </Link>
+      </div>
+      <h1 className="font-bold mt-12">Portfolio Website</h1>
+      <div className="flex item-center justify-start mt-4 space-x-5">
+        <Link
+          className="px-6 py-3 bg-gray-400 rounded-lg hover:scale-105 hover:bg-gray-500"
+          to="/my-portifolio"
+        >
+          Raksmey soriya
+        </Link>
       </div>
     </div>
   );
