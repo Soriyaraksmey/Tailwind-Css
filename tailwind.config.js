@@ -14,6 +14,7 @@ module.exports = {
         title: "14rem",
       },
       fontFamily: {
+        pattaya: ["Pattaya", "sans-serif"],
         sans: ["Josefin Sans", "sans-serif"],
         alata: ["Alata", "sans-serif"],
         Bebas: ["Bebas Neue", "sans-serif"],

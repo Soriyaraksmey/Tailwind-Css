@@ -14,6 +14,7 @@ import LoopStudio from "./components/website/LoopStudio";
 import Logindribble from "./components/redesign/logindribble";
 import Mine from "./components/website/mine";
 import Sidebar from "./components/redesign/Sidebar";
+import Instagam from "./components/redesign/instagramsidebar";
 function App() {
   return (
     <Router>
@@ -29,6 +30,7 @@ function App() {
         <Route path="/dribble-redesign" element={<Logindribble />} />
         <Route path="/my-portifolio" element={<Mine />} />
         <Route path="/sidebar" element={<Sidebar />} />
+        <Route path="/ig" element={<Instagam />} />
         <Route path="*" element={<Errorpage />} />
       </Routes>
     </Router>

@@ -4,12 +4,12 @@ import background from "../../assets/redesign/image.jpg";
 
 function Logindribble() {
   return (
-    <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <div className="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+    <div className="flex items-center justify-center min-h-screen bg-gray-100 ">
+      <div className="relative flex flex-col m-6 space-y-8 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 ">
         {/* left side */}
-        <div className="flex flex-col justify-center p-6 md:p-20">
+        <div className="flex flex-col justify-center p-8 md:p-14">
           <span className="mb-3 text-4xl font-bold">Welcome back</span>
-          <span className="font-light text-gray-400 mb-12">
+          <span className="font-light text-gray-400 mb-8">
             Welcom back! Please enter your details
           </span>
           <div className="py-4">
@@ -50,13 +50,13 @@ function Logindribble() {
           </div>
         </div>
         {/* right side */}
-        <img
+        {/* <img
           src={background}
           alt=""
-          className="w-[500px] hidden rounded-r-2xl md:block"
-        />
+          className="w-[400px] hidden rounded-r-2xl md:block"
+        /> */}
         {/* text on image */}
-        <div className="absolute hidden bottom-10 right-20 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block">
+        {/* <div className="absolute hidden bottom-10 right-6 p-6 bg-white bg-opacity-30 backdrop-blur-sm rounded drop-shadow-lg md:block">
           <span className="text-white text-xl">
             {" "}
             "We've been uesing Untitle to kick"
@@ -64,7 +64,7 @@ function Logindribble() {
             start every new project and can't <br />
             imagine working without it."
           </span>
-        </div>
+        </div> */}
       </div>
     </div>
   );
